@@ -1,0 +1,3 @@
+SELECT DISTINCT city 
+FROM station 
+WHERE lower(substring(city,-1,1)) in ('a','e','i','o','u') AND lower(substring(city,1,1)) in ('a','e','i','o','u');
